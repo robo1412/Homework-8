@@ -1,0 +1,97 @@
+.labyrinth {
+    border-radius: 20px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    background-image: url(../images/labyrinth-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 650px;
+    height: 650px;
+    position: relative;
+}
+.fish {
+    background-image: url(../images/fish-svgrepo-com\ \(1\).svg);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    bottom: 105px;
+    animation: movefish 20s linear infinite;
+}
+
+@keyframes movefish {
+    0% { bottom: 105px; left: -10px;}
+    3% {transform: rotate(0deg);}
+    5% {bottom: 105px; left: 30px; transform: rotate(90deg);}
+    8% {transform: rotate(90deg);}
+    10%{bottom: 30px; left: 30px; transform: rotate(0deg);}
+    13%{ transform: rotate(0deg);}
+    15%{bottom: 30px; left: 105px; transform: rotate(-90deg);}
+    20%{ transform: rotate(-90deg);}
+    22%{bottom: 180px; left: 105px; transform: rotate(0deg);}
+    27%{transform: rotate(0deg);}
+    29%{bottom: 180px; left: 260px; transform: rotate(-90deg);}
+    32%{transform: rotate(-90deg);}
+    34%{bottom: 260px; left: 260px;transform: rotate(-180deg);}
+    38%{transform: rotate(-180deg);}
+    40%{bottom: 260px; left: 105px; transform: rotate(-90px);}
+    43%{transform: rotate(-90deg);}
+    45%{bottom: 340px; left: 105px; transform: rotate(0deg);}
+    47%{transform: rotate(0deg);}
+    49%{bottom: 340px; left: 180px;transform: rotate(-90deg);}
+    51%{transform: rotate(-90deg);}
+    53%{bottom: 420px;left: 180px; transform: rotate(0deg);}
+    55%{transform: rotate(0deg);}
+    57%{bottom: 420px;left: 260px; transform: rotate(90deg);}
+    59%{transform: rotate(90deg);}
+    61%{bottom: 340px;left: 260px; transform: rotate(0deg);}
+    63%{transform: rotate(0deg);}
+    65%{bottom: 340px;left: 420px;transform: rotate(90deg);}
+    68%{transform: rotate(90deg);}
+    70%{bottom: 180px;left: 420px;transform: rotate(0deg);}
+    72%{transform: rotate(0deg);}
+    74%{bottom: 180px;left: 500px;transform: rotate(90deg);}
+    76%{transform: rotate(90deg);}
+    78%{bottom: 105px;left: 500px;transform: rotate(0deg);}
+    80%{transform: rotate(0deg);}
+    82%{bottom: 105px;left: 580px;transform: rotate(-90deg);}
+    88%{transform: rotate(-90deg);}
+    90%{bottom: 420px;left: 580px;transform: rotate(-180px);}
+    92%{transform: rotate(-180deg);}
+    94%{bottom: 420px;left: 500px;transform: rotate(-90deg);}
+    96%{transform: rotate(-90deg);}
+    98%{bottom: 500px;left: 500px;transform: rotate(0deg);}
+    100%{bottom: 500px;left: 600px;}
+}
+
+.dangerous-fish1 {
+    background-image: url(../images/anglerfish-fish-sea-svgrepo-com.svg);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    left: 80%;
+    bottom: 30px;
+    animation: dangerous-fish1 5s alternate linear infinite;
+}
+
+@keyframes dangerous-fish1 {
+    from {left: 80%; bottom: 30px;}
+    to {left: 35%; bottom: 30px;}
+}
+.dangerous-fish2 {
+    background-image: url(../images/fish-puffer-sea-svgrepo-com.svg);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    bottom: 105px;
+    animation: dangerous-fish2 5s linear infinite;
+}
+@keyframes dangerous-fish2 {
+    0% {left: 50%;}
+    40% {left: 35%; transform: rotate(0deg);}
+    50%{transform: rotate(-180deg);}
+    90%{transform: rotate(-180deg);}
+}
